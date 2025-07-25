@@ -1,1 +1,35 @@
-<div>Hello World</div>
+<div class="container">
+    <div class="header">
+        <h2>Task Manager</h2>
+        <input placeholder="Search Tasks..." class="input-field" />
+    </div>
+    <div class="body">
+        <div class="form-control">
+            <label>Title</label>
+            <input placeholder="Task Title" />
+        </div>
+        <div class="form-control">
+            <label>Title</label>
+            <select name="" id="">
+                <option value="">Easy</option>
+                <option value="">Medium</option>
+                <option value="">Hard</option>
+            </select>
+        </div>
+        <button class="button">
+            Add Task
+        </button>
+    </div>
+    <div class="main">
+        <ul class="card-wrapper">
+            <li *ngFor="let item of datas;" class="cards">
+                <div>{{item.id}}</div>
+                <div>{{item.deadline}}</div>
+                <div>{{item.description}}</div>
+                <div>{{item.priority}}</div>
+                <div>{{item.title}}</div>
+
+            </li>
+        </ul>
+    </div>
+</div>
